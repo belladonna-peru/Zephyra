@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zephyra - Belleza que empodera</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script defer src="script.js"></script>
+  <link rel="shortcut icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- CABECERA -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <img src="img/logo.png" alt="Zephyra Logo">
+        <h1>Zephyra</h1>
+      </div>
+      <nav class="main-nav">
+        <ul class="menu-principal">
+            <li><a href="#marcas">Marcas</a></li>
+            <li><a href="#piel">Facial</a></li>
+            <li><a href="#maquillaje">Maquillaje</a></li>
+            <li><a href="#cabello">Cabello</a></li>
+            <li><a href="#accesorios">Accesorios</a></li>
+            <li><a href="#fragancias">Fragancias</a></li>
+            <li><a href="#packs">Packs</a></li>
+            <li><a href="#descuentos">Descuentos</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="header-buttons">
+        <button id="btn-login" class="btn-header">Iniciar Sesión</button>
+        <button id="btn-register" class="btn-header">Registrarse</button>
+        <div id="carrito-icono" class="carrito-icono">
+          🛒 <span id="contador-carrito">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-texto">
+      <h2>Descubre tu belleza con Zephyra</h2>
+      <p>Maquillaje, fragancias y cuidado para cada estilo.</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE PRODUCTOS -->
+  <main class="productos-container">
+    <h2>Productos Destacados</h2>
+    <div id="grid-productos" class="grid-productos">
+      <!-- Los productos se cargarán dinámicamente desde script.js -->
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Zephyra. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Ejemplo de modal -->
+<div class="modal" id="modalLogin">
+  <div class="modal-content">
+    <span id="cerrarModal" class="cerrar">&times;</span>
+    <!-- Tu formulario de login aquí -->
+  </div>
+</div>
+
+</body>
+</html>
