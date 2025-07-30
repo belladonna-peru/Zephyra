@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Usuario - Zephyra</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Modal de Login/Registro -->
+  <div id="modalLogin" class="modal">
+    <div class="modal-contenido">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+      <!-- Aquí se carga el contenido dinámico de login y registro -->
+    </div>
+  </div>
+
+  <header>
+    <h1>Mi Cuenta - Zephyra</h1>
+    <button onclick="window.location.href='index.html#maquillaje'" class="btn-comprar">Ir a Maquillaje</button>
+  </header>
+
+  <main class="panel-container">
+
+    <!-- PERFIL DE USUARIO -->
+    <section class="panel-section">
+      <h2>👤 Perfil</h2>
+      <form id="formPerfil">
+        <input type="text" id="perfilNombre" placeholder="Nombre" required />
+        <input type="text" id="perfilApellido" placeholder="Apellido" required />
+        <input type="text" id="perfilDNI" placeholder="DNI" maxlength="8" required />
+        <input type="tel" id="perfilTelefono" placeholder="Teléfono" required />
+        <input type="email" id="perfilCorreo" placeholder="Correo Electrónico" required />
+        <button type="submit">Guardar Cambios</button>
+      </form>
+      <div id="perfilGuardado" class="datos-guardados"></div>
+    </section>
+
+    <!-- DIRECCIÓN -->
+    <section class="panel-section">
+      <h2>📍 Dirección</h2>
+      <form id="formDireccion">
+        <input type="text" id="dep" placeholder="Departamento" required />
+        <input type="text" id="prov" placeholder="Provincia" required />
+        <input type="text" id="dist" placeholder="Distrito" required />
+        <input type="text" id="direccionExacta" placeholder="Dirección exacta" required />
+        <input type="text" id="referencia" placeholder="Referencia" />
+        <button type="submit">Guardar Dirección</button>
+      </form>
+      <div id="direccionGuardada" class="datos-guardados"></div>
+    </section>
+
+    <!-- MÉTODOS DE PAGO -->
+    <section class="panel-section">
+      <h2>💳 Métodos de Pago</h2>
+      <form id="formPago">
+        <label><input type="radio" name="metodoPago" value="Yape" required /> Yape</label>
+        <label><input type="radio" name="metodoPago" value="Plin" /> Plin</label>
+        <label><input type="radio" name="metodoPago" value="Transferencia" /> Transferencia</label>
+        <label><input type="radio" name="metodoPago" value="Efectivo" /> Efectivo</label>
+
+        <hr>
+        <h4>Pago con Tarjeta</h4>
+        <input type="text" id="tarjetaNombre" placeholder="Nombre en la tarjeta" />
+        <input type="text" id="tarjetaNumero" placeholder="Número de tarjeta" maxlength="16" />
+        <input type="text" id="tarjetaExp" placeholder="MM/AA" maxlength="5" />
+        <input type="text" id="tarjetaCVV" placeholder="CVV" maxlength="3" />
+
+        <button type="submit">Guardar Método</button>
+      </form>
+      <div id="pagoGuardado" class="datos-guardados"></div>
+    </section>
+
+    <!-- PEDIDOS -->
+    <section class="panel-section">
+      <h2>📦 Mis Pedidos</h2>
+      <div id="pedidosContainer"></div>
+    </section>
+
+    <!-- PUNTOS -->
+    <section class="panel-section">
+      <h2>🎁 Mis Puntos</h2>
+      <p>Has acumulado <span id="puntosUsuario">0</span> puntos.</p>
+      <small>Ganas 2 puntos por cada S/50 de compra.</small>
+    </section>
+
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
