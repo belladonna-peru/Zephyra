@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión | Zephyra</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #fff0f6, #ffe0f0);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .formulario-container {
+      width: 100%;
+      max-width: 400px;
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 0, 128, 0.1);
+    }
+
+    .formulario-card h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #cc007a;
+    }
+
+    label {
+      font-weight: 600;
+      color: #333;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .btn-principal {
+      background-color: #cc007a;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-principal:hover {
+      background-color: #a80064;
+    }
+
+    .texto-formulario {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .texto-formulario a {
+      color: #cc007a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .mensaje-error {
+      color: red;
+      font-size: 0.9rem;
+      text-align: center;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="formulario-container">
+    <div class="formulario-card">
+      <h2>Iniciar Sesión</h2>
+      <form id="form-login">
+        <label for="email-login">Correo electrónico:</label>
+        <input type="email" id="email-login" required placeholder="Ingresa tu correo" />
+
+        <label for="password-login">Contraseña:</label>
+        <input type="password" id="password-login" required placeholder="Ingresa tu contraseña" />
+
+        <p id="mensaje-error" class="mensaje-error">Correo o contraseña incorrectos.</p>
+
+        <button type="submit" class="btn-principal">Ingresar</button>
+        <p class="texto-formulario">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
