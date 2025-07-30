@@ -1,0 +1,79 @@
+/* ========== RESPONSIVE PARA TABLETS Y CELULARES ========== */
+
+@media (max-width: 991px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu-principal {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .banner-texto h2 {
+    font-size: 1.6rem;
+  }
+
+  .banner-texto p {
+    font-size: 1rem;
+  }
+
+  .grid-productos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .btn-header {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    width: 100%;
+    order: 2;
+  }
+
+  .menu-principal {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e91e63;
+    border-radius: 10px;
+  }
+
+  .menu-principal li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .header-buttons {
+    width: 100%;
+    justify-content: space-between;
+    order: 3;
+  }
+
+  .logo {
+    justify-content: space-between;
+    width: 100%;
+    order: 1;
+  }
+
+  .banner-texto h2 {
+    font-size: 1.4rem;
+  }
+
+  .productos-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}
